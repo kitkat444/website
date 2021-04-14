@@ -1,140 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mattis Website v0.8</title>
-	<style>
-	.body {left: 25%;}
-	</style>
+<title>Mattis' Website</title>
+<style>
+body {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-family: Calibri
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
 </head>
-	<body id="body" bgcolor="#000"> <font face="Purisa"face color="#FFF">
-<br>
-	<h1><center>Dies ist die Überschrift von Mattis Website</center></h1>
-<br>
-<hr>
-	<img src="images/tux.png" width="12%" style="float:right;margin:0px">
-<br/>
-	<img src="images/ubuntu.png" width="12%" style="float:right;margin:0px">
+<body>
+<font face="Times New Roman"></font>
 
-	<img src="images/ssd.png" width="20%" style="float:right;margin:0px">
+<h2><center>Willkommen auf Mattis' Website</center></h2>
+<p><center>Diese Website befindet sich noch im Aufbau. Hier kann man zukünftig Projekte und Anleitungen für rund um Hardware und Software finden...</center></p>
 
-<font face="Laksaman";font size="4">
+<button onclick="myFunction()">dark/light mode</button>
 
-<h2>Was kann und wird man hier sehen?</h2>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
-<b>Diese Website befindet sich noch im Aufbau.</b> Sie ist meine erste selbst gecshriebene bzw. programmierte Website.<br>
-Hier werden Empfehlungen, Vorschläge und Tipps rund um das Thema PC Hardware, Software und Zubehör und gesammeltes Wissen geteilt. Auch zahlreiche PC Konfigurationen bzw. Bauvoschläge können weiter unten angesehen werden. 
-<br>
-<br>
-<a href="https://geizhals.de/" target="_blank"</a>
-Link zum Geizhals Preisvergleich</a>
-<br>
-<br>
-	<p><u>Hier ein paar nette Zitate:</u><br>
-<br>
-<i>"Ich arbeite an einem (freien) Betriebssystem (nur in meiner Freizeit, es wird nicht so groß und professionell wie GNU) für 386-kompatible PCs."</i>
-<p>frühes Posting im Usenet, Zitat von Linus Torvalds, Gründer von Linux!</p>
-<i>"Zwei Dinge sind unendlich, das Universum und die menschliche Dummheit, aber bei dem Universum bin ich mir noch nicht ganz sicher."</i><b> Albert Einstein</b>
-<br>
-<br>
-<hr>
-<p><h2>Verschiedene Betriebssysteme für die Raspberry Pi</h2>
-Hier listen wir euch einige verschiedene Betriebssysteme für eure Raspberry Pi auf, erklären welches OS für welchen Einsatz am besten geeignet ist und verlinken euch den Download dazu.
-<br>
-  <ul>
-	<li><a href="https://www.raspberrypi.org/downloads/" target="_blank"</a>Raspbian</href></a></li>
-	<li><a href="https://retropie.org.uk/download/RetroPi" target="_blank"</a>RetroPie</href></a></li>
-	<li><a href="https://openelec.tv/downloads" target="_blank"</a>OpenElec</href></a></li>
-	<li><a href="https://konstakang.com/devices/rpi3/LineageOS15.1/" target="_blank"</a>LineageOS 15.1 (Android 8.1)</href></a></li>
-	<li><a href="https://ubuntu.com/download" target="_blank"</a>Ubuntu (Mate, Server, Desktop)</href></a></li>
-	<li><a href="https://www.kali.org/downloads/" target="_blank"</a>Kali Linux</href></a></li>
-  </ul>
-<br>
-Alternativen:
-  <ol>
-	<li><a href="https://berryterminal.com/doku.php/berryboot" target="_blank"</a>BerryBoot</href></a></li>
-	<li><a href="https://www.raspberrypi.org/downloads/noobs/" target="_blank"</a>Noobs</href></a></li>
-	<li>OS' ohne UI
-  </ol>
-<hr>
-<img src="images/bluescreen.jpg" width="25%" style="float:right;margin:0px">
-<br>
-Was man seinem PC niemals antun sollte: (nicht zu ernst nehmen :-D)
-  <ul>
-	<li>Chrome oder PS nutzen, wenn man wenig RAM hat</li>
-	<li>Software von unseriösen Websites installieren</li>
-	<li>System32 löschen</li>
-  </ul>
-sonst könnte es so aussehen wie auf dem Bild rechts
-<br>
-<br>
-<hr>
-<h2>PC Konfigurationen</h2>
-<h3>Wie funktioniert die Liste?</h3>
-Die ersten beiden Spalten sind selbst erklärend. Hier steht der ungefähre Preis (+/-15€) und der Link zur
-<a href="https://geizhals.de/" target="_blank"</a></href>geizhals.de</a> Liste.
-<br>
-In der 3. Spalte sieht man, mit welchen Grafikeinstellungen man mit diesem PC spielen kann (empfohlene Einstellungen gelten für die meisten Spiele).
-<br>
-In der letzten Spalte sieht man, welche Verbesserungen die Konfiguration im Vergleich zur nächstgünstigeren Konfiguration beinhaltet.
-<br>
-<br>
-<h3>Gaming PC Konfigurationen und Vergleich</h3>
-<table border="2px">
-<tr>
-  <td><b>Preis:</b></td> 
-  <td><b>Link:</b></td>
-  <td><b>Geeignet für:</b></td>
-  <td><b>Verbesserungen gegenüber nächstgünstigerer Konfiguration:</b></td>
-</tr>
-<tr>
-<td>500€</td> 		
-  <td><a href="https://geizhals.de/?cat=WL-1113697" target="_blank"</a>
-  Liste</td>
-  <td>FHD mittel-hoch</td>
-  <td>mehr Arbeitsspeicher, stärkere 6 Kern CPU
-</tr>
-<tr>
-<td>600€</td> 		
-  <td><a href="https://geizhals.de/?cat=WL-1046159" target="_blank"</a>
-  Liste</td>
-  <td>FHD hoch-max</td>
-  <td>stärkere GPU, größere SSD, besseres Netzteil
-</tr>
-<tr>
-<td>700€</td> 		
-  <td><a href="https://geizhals.de/?cat=WL-1113696" target="_blank"</a>
-  Liste</td>
-  <td>FHD ultra-max</td>
-  <td>effzientere u. stärkere GPU, leiser CPU-Kühler, mehr Speicher
-</tr>
-<td>800€</td> 		
-  <td><a href="https://geizhals.de/?cat=WL-1046155" target="_blank"</a>
-  Liste</td>
-  <td>FHD max/WQHD hoch</td>
-  <td>stärkere GPU, leiser CPU-Kühler, mehr Speicher
-</tr>
-<tr>
-  <td>900€</td>	
-  <td><a href="https://geizhals.de/?cat=WL-1116395" target="_blank"</a>
-  Liste</td>
-  <td>WQHD hoch-max</td>
-  <td>stärkere GPU, stärkere CPU</td>
-</tr>
-<tr>
-  <td>1000€</td>		
-  <td><a href="https://geizhals.de/?cat=WL-1225993" target="_blank"</a>
-  Liste</td>
-  <td>WQHD hoch-max</td>
-  <td>ATX Gehäuse m. Glasfenster, leiser CPU-Kühler, etwas größere SSD</td>
-</tr>
-</table>
-<br>
-<a href="https://geizhals.de/?cat=WL-1440033" target="_blank"</a></href> Weitere Zubehör Empfehlungen</a>
-<br>
-<br>
-<hr>
-<br>
-<center>2020 Mattis Behmke | <b>Danke Jose Adura</b> für das beibringen von HTML</center>
-<br>
 </body>
 </html>
