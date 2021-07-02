@@ -5,15 +5,15 @@
 <style>
 body {
   padding: 10px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 25px;
   font-family: Calibri
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
+.light-mode {
+  background-color: white;
+  color: black;
 }
 </style>
 </head>
@@ -23,12 +23,12 @@ body {
 <h2><center>Willkommen auf Mattis' Website</center></h2>
 <p><center>Diese Website ist ein Platzhalter. Eventuell findet man hier zukünftig Projekte und Anleitungen rund um Hardware und Software.</center></p>
 
-<button onclick="myFunction()">dark/light mode</button>
+<button onclick="myFunction()">Light/OLED mode</button>
 
 <script>
 function myFunction() {
    var element = document.body;
-   element.classList.toggle("dark-mode");
+   element.classList.toggle("light-mode");
 }
 </script>
 
