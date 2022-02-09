@@ -20,7 +20,7 @@ body {
 <body>
 <font face="Ubuntu"></font>
 
-<button onclick="myFunction()">Light/OLED mode</button>
+<button onclick="theme()">change theme</button>
   
 <h2><center>
 
@@ -36,10 +36,8 @@ Welcome to my website. :)</center></h2>
   <li>recipes</li>
 </ul>    
 
-</p>
-
 <script>
-function myFunction() {
+function theme() {
    var element = document.body;
    element.classList.toggle("light-mode");
 }
