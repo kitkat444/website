@@ -7,7 +7,59 @@
 
 <title>Mattis' Website</title>
 <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+  
+<script>
+function theme() {
+   var element = document.body;
+   element.classList.toggle("light");
+}
+</script>
+
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li style="float:left"><a class="active" href="index">Home</a></li>
+  <li <button onclick="theme()">change theme</button>
+  <li><a href="test">test</a></li>
+  <li><a href="recipes">Recipes</a></li>
+  <li><a href="projects">Projects</a></li>
+  <li style="float:right"><a href="about">About</a></li>
+</ul>
+
+</body>
+</html>
+  
+  <style>
 body {
   padding: 10px;
   background-color: #16161a;
@@ -25,8 +77,6 @@ body {
 <body>
 <font face="Courier New"></font>
 
-<button onclick="theme()">change theme</button>
-
 <h2><center>  
 Welcome to my website :)<p></h2>
 This website is under construction. What I will work on next is a navigation bar.<p>
@@ -40,12 +90,78 @@ In the future I will show you stuff I am interested in like:<p></center>
   <li>Raspberry Pi projects</li>
   <li>recipes</li>
 </ul>    
-<script>
-function theme() {
-   var element = document.body;
-   element.classList.toggle("light");
-}
-</script>
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>  
+  
 </body>
 </html>
